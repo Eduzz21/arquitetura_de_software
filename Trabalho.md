@@ -88,7 +88,9 @@ Funcionalidades Principais:
 
 ### 4.9 Pagamento Seguro
 **Decisão:** Integrar uma solução de pagamento seguro, como PayPal ou Stripe.  
+
 **Justificativa:** Isso oferece segurança nas transações financeiras e aumenta a confiança dos usuários ao realizar pagamentos.  
+
 **Alternativa Rejeitada:** A opção de não implementar um sistema de pagamento foi considerada, mas isso comprometeria a funcionalidade essencial do sistema de gerenciamento de empréstimos e reservas.
 
 
