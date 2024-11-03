@@ -44,50 +44,53 @@ Funcionalidades Principais:
 - O administrador registra novos livros e gerencia usuários.
 - Coleta de opiniões para melhorar a experiência.
 
-## 4.1 Frontend
-Decisão: Usar React como framework para o frontend.  
-Justificativa: O React permite a criação de interfaces dinâmicas e interativas, melhorando a experiência do usuário. Sua arquitetura baseada em componentes facilita a reutilização de código e a manutenção do sistema.  
-Alternativa Rejeitada: Angular foi considerado, mas sua curva de aprendizado mais acentuada e estrutura mais rígida não se adequavam à flexibilidade desejada para o projeto.
+## 4. Decisões de Tecnologia
 
-## 4.2 Backend
-Decisão: Utilizar Node.js com Express.js para o backend.  
-Justificativa: Essa combinação é ideal para construir APIs escaláveis e robustas de forma rápida. O uso do JavaScript tanto no frontend quanto no backend permite uma integração mais fluida entre as equipes.  
-Alternativa Rejeitada: Adoção de Ruby on Rails foi considerada, mas o desempenho do Node.js em aplicações assíncronas é um fator crítico para a responsividade do sistema.
+### 4.1 Frontend
+**Decisão:** Usar React para o frontend.  
+**Justificativa:** O React é excelente para criar interfaces dinâmicas e interativas, proporcionando uma boa experiência ao usuário. Além disso, sua arquitetura baseada em componentes facilita a reutilização de código e a manutenção do sistema.  
+**Alternativa Rejeitada:** Consideramos o Angular, mas sua curva de aprendizado mais acentuada e estrutura rígida não se adequavam à flexibilidade que buscamos.
 
-## 4.3 Banco de Dados
-Decisão: Optar pelo MySQL como banco de dados relacional.  
-Justificativa: O MySQL garante a integridade dos dados e é confiável para gerenciar relações complexas, como entre usuários e empréstimos. Sua ampla adoção facilita a obtenção de suporte e documentação.  
-Alternativa Rejeitada: O MongoDB foi considerado, mas como banco de dados NoSQL, não atende às necessidades de relações complexas que o sistema requer.
+### 4.2 Backend
+**Decisão:** Utilizar Node.js com Express.js para o backend.  
+**Justificativa:** Essa combinação é ideal para construir APIs escaláveis e robustas rapidamente. A utilização de JavaScript tanto no frontend quanto no backend permite uma integração mais fluida entre as equipes.  
+**Alternativa Rejeitada:** Avaliamos usar o PHP com Laravel, mas o desempenho do Node.js em aplicações assíncronas é fundamental para a responsividade do sistema.
 
-## 4.4 ORM
-Decisão: Utilizar Sequelize como ORM.  
-Justificativa: O Sequelize simplifica a interação com o banco de dados, permitindo que os desenvolvedores trabalhem com objetos, tornando o código mais limpo e evitando erros comuns de SQL.  
-Alternativa Rejeitada: O uso de TypeORM foi avaliado, mas a simplicidade e a popularidade do Sequelize facilitarão a colaboração e o suporte da equipe.
+### 4.3 Banco de Dados
+**Decisão:** Optar pelo MySQL como banco de dados relacional.  
+**Justificativa:** O MySQL assegura a integridade dos dados e é confiável para gerenciar relações complexas, como as entre usuários e empréstimos. Sua ampla adoção facilita o acesso a suporte e documentação.  
+**Alternativa Rejeitada:** Consideramos o MongoDB, mas como banco de dados NoSQL, ele não atende às necessidades de relações complexas que o sistema exige.
 
-## 4.5 Testes de API
-Decisão: Escolher Postman e Insomnia para testes de API.  
-Justificativa: Ambas as ferramentas são intuitivas e eficazes para validar se todas as rotas da API estão funcionando corretamente, garantindo a qualidade do sistema antes do lançamento.  
-Alternativa Rejeitada: O uso de JMeter foi considerado, mas sua complexidade é desnecessária para as necessidades atuais de testes.
+### 4.4 ORM
+**Decisão:** Utilizar Sequelize como ORM.  
+**Justificativa:** O Sequelize simplifica a interação com o banco de dados, permitindo que os desenvolvedores trabalhem com objetos, o que torna o código mais limpo e minimiza erros comuns de SQL.  
+**Alternativa Rejeitada:** Avaliamos usar Mongoose, mas a simplicidade e popularidade do Sequelize facilitarão a colaboração e o suporte da equipe.
 
-## 4.6 Controle de Versão
-Decisão: Usar Git e GitHub para controle de versão.  
-Justificativa: O Git permite gerenciar as alterações no código de forma eficiente, enquanto o GitHub facilita a colaboração entre os membros da equipe, essencial para o sucesso do projeto.  
-Alternativa Rejeitada: Bitbucket foi considerado, mas o GitHub é mais amplamente utilizado e oferece uma comunidade mais ativa e recursos mais robustos.
+### 4.5 Testes de API
+**Decisão:** Escolher Postman e Insomnia para testes de API.  
+**Justificativa:** Ambas as ferramentas são intuitivas e eficazes para validar se todas as rotas da API estão funcionando corretamente, garantindo a qualidade do sistema antes do lançamento.  
+**Alternativa Rejeitada:** O uso de JMeter foi considerado, mas sua complexidade é desnecessária para as necessidades atuais de testes.
 
-## 4.7 Integração com Serviços de Transporte
-Decisão: Integrar serviços de transporte no sistema.  
-Justificativa: Isso permitirá que os usuários solicitem transporte de itens e rastreiem suas encomendas, aumentando a conveniência e eficiência do sistema.  
-Alternativa Rejeitada: A ideia de não incluir um sistema de transporte foi considerada, mas isso limitava as funcionalidades do sistema e a experiência do usuário.
+### 4.6 Controle de Versão
+**Decisão:** Usar Git e GitHub para controle de versão.  
+**Justificativa:** O Git permite gerenciar as alterações no código de forma eficiente, enquanto o GitHub facilita a colaboração entre os membros da equipe, que é essencial para o sucesso do projeto.  
+**Alternativa Rejeitada:** O Bitbucket foi considerado, mas o GitHub é mais amplamente utilizado e oferece uma comunidade mais ativa, além de recursos robustos.
 
-## 4.8 Gerenciamento de Usuários
-Decisão: Criar uma interface dedicada para o gerenciamento de usuários.  
-Justificativa: Essa interface é crucial para permitir que administradores adicionem, editem ou removam usuários e gerenciem permissões, garantindo a segurança do sistema.  
-Alternativa Rejeitada: O gerenciamento manual de usuários sem uma interface foi considerado, mas seria ineficiente e propenso a erros.
+### 4.7 Integração com Serviços de Transporte
+**Decisão:** Integrar serviços de transporte ao sistema.  
+**Justificativa:** Essa integração permitirá que os usuários solicitem transporte de itens e rastreiem suas encomendas, aumentando a conveniência e eficiência do sistema.  
+**Alternativa Rejeitada:** A ideia de não incluir um sistema de transporte foi considerada, mas isso limitava as funcionalidades do sistema e a experiência do usuário.
 
-## 4.9 Pagamento Seguro
-Decisão: Integrar uma solução de pagamento seguro, como PayPal ou Stripe.  
-Justificativa: Isso oferece segurança nas transações financeiras e aumenta a confiança dos usuários ao realizar pagamentos.  
-Alternativa Rejeitada: A opção de não implementar um sistema de pagamento foi considerada, mas isso comprometeria a funcionalidade essencial do sistema de gerenciamento de empréstimos e reservas.
+### 4.8 Gerenciamento de Usuários
+**Decisão:** Criar uma interface dedicada para o gerenciamento de usuários.  
+**Justificativa:** Essa interface é crucial para permitir que administradores gerenciem permissões e a segurança do sistema.  
+**Alternativa Rejeitada:** O gerenciamento manual de usuários, sem uma interface, foi considerado, mas seria ineficiente e propenso a erros.
+
+### 4.9 Pagamento Seguro
+**Decisão:** Integrar uma solução de pagamento seguro, como PayPal ou Stripe.  
+**Justificativa:** Isso oferece segurança nas transações financeiras e aumenta a confiança dos usuários ao realizar pagamentos.  
+**Alternativa Rejeitada:** A opção de não implementar um sistema de pagamento foi considerada, mas isso comprometeria a funcionalidade essencial do sistema de gerenciamento de empréstimos e reservas.
+
 
 ## 5. Requisitos e Restrições
 
