@@ -53,7 +53,6 @@ Funcionalidades Principais:
 
 9. Coleta de opiniões para melhorar a experiência.
 
-
 ## 4. Decisões de Tecnologia
 
 ### 4.1 Frontend
@@ -63,14 +62,12 @@ Funcionalidades Principais:
 
 **Alternativa Rejeitada:** Consideramos o Angular, mas sua curva de aprendizado mais acentuada e estrutura rígida não se adequavam à flexibilidade que buscamos.
 
-
 ### 4.2 Backend
 **Decisão:** Utilizar Node.js com Express.js para o backend.  
 
 **Justificativa:** Essa combinação é ideal para construir APIs escaláveis e robustas rapidamente. A utilização de JavaScript tanto no frontend quanto no backend permite uma integração mais fluida entre as equipes.  
 
 **Alternativa Rejeitada:** Avaliamos usar o PHP com Laravel, mas o desempenho do Node.js em aplicações assíncronas é fundamental para a responsividade do sistema.
-
 
 ### 4.3 Banco de Dados
 **Decisão:** Optar pelo MySQL como banco de dados relacional.  
@@ -79,14 +76,12 @@ Funcionalidades Principais:
 
 **Alternativa Rejeitada:** Consideramos o MongoDB, mas como banco de dados NoSQL, ele não atende às necessidades de relações complexas que o sistema exige.
 
-
 ### 4.4 ORM
 **Decisão:** Utilizar Sequelize como ORM.  
 
 **Justificativa:** O Sequelize simplifica a interação com o banco de dados, permitindo que os desenvolvedores trabalhem com objetos, o que torna o código mais limpo e minimiza erros comuns de SQL.  
 
 **Alternativa Rejeitada:** Avaliamos usar Mongoose, mas a simplicidade e popularidade do Sequelize facilitarão a colaboração e o suporte da equipe.
-
 
 ### 4.5 Testes de API
 **Decisão:** Escolher Postman e Insomnia para testes de API.  
@@ -95,14 +90,12 @@ Funcionalidades Principais:
 
 **Alternativa Rejeitada:** O uso de JMeter foi considerado, mas sua complexidade é desnecessária para as necessidades atuais de testes.
 
-
 ### 4.6 Controle de Versão
 **Decisão:** Usar Git e GitHub para controle de versão.  
 
 **Justificativa:** O Git permite gerenciar as alterações no código de forma eficiente, enquanto o GitHub facilita a colaboração entre os membros da equipe, que é essencial para o sucesso do projeto.  
 
 **Alternativa Rejeitada:** O Bitbucket foi considerado, mas o GitHub é mais amplamente utilizado e oferece uma comunidade mais ativa, além de recursos robustos.
-
 
 ### 4.7 Integração com Serviços de Transporte
 **Decisão:** Integrar serviços de transporte ao sistema.  
@@ -111,7 +104,6 @@ Funcionalidades Principais:
 
 **Alternativa Rejeitada:** A ideia de não incluir um sistema de transporte foi considerada, mas isso limitava as funcionalidades do sistema e a experiência do usuário.
 
-
 ### 4.8 Gerenciamento de Usuários
 **Decisão:** Criar uma interface dedicada para o gerenciamento de usuários.  
 
@@ -119,14 +111,12 @@ Funcionalidades Principais:
 
 **Alternativa Rejeitada:** O gerenciamento manual de usuários, sem uma interface, foi considerado, mas seria ineficiente e propenso a erros.
 
-
 ### 4.9 Pagamento Seguro
 **Decisão:** Integrar uma solução de pagamento seguro, como PayPal ou Stripe.  
 
 **Justificativa:** Isso oferece segurança nas transações financeiras e aumenta a confiança dos usuários ao realizar pagamentos.  
 
 **Alternativa Rejeitada:** A opção de não implementar um sistema de pagamento foi considerada, mas isso comprometeria a funcionalidade essencial do sistema de gerenciamento de empréstimos e reservas.
-
 
 ## 5. Requisitos e Restrições
 
